@@ -18,7 +18,11 @@ width:100%;
 align-items: center;
 position: sticky;
 top: 0;
-background: rgba(250, 250, 250,0.96);
+/* background: rgba(250, 250, 250,0.96); */
+background: ${({color})=> color == 'dark' ? 'black' : 'white'};
+border: 1px solid ${({color})=>color == 'dark' ? 'white' : 'black'};
+
+
 `
 
 export const LogoTip = styled.div`
@@ -34,6 +38,7 @@ export const NavGroup = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-around;
+color: ${({color})=>color == 'dark' ? 'white' : 'black'};
 flex: 2;
 
 li{
@@ -62,68 +67,68 @@ li:hover:after{
 
 
 
-export const Com = styled.label`
-position: relative;
-display: flex;
-white-space: nowrap;
-align-items: center;
-`
+// export const Com = styled.label`
+// position: relative;
+// display: flex;
+// white-space: nowrap;
+// align-items: center;
+// `
 
-Com.Label = styled.label`
+// Com.Label = styled.label`
 
-cursor: pointer;
-font-size: 14px;
-font-weight: 400;
+// cursor: pointer;
+// font-size: 14px;
+// font-weight: 400;
 
-`
-
-
-
-Com.Input = styled.input`
-position: absolute;
-display: none;
-
-&:checked + span{
-background-color: #FFE1C2;
-&::before{
-    background-color: #F77F00;
-    left: calc(100% - 2px);
-    transform: translateX(-100%);
-}
-}
-
-`
+// `
 
 
-Com.Slider = styled.span`
-position: relative;
-width: 30px;
-height: 15px;
-background-color: #CFCCC9;
-margin: 0 25px 0 10px;
-display: flex;
-align-items: center;
-border-radius: 10px;
-cursor: pointer;
-&::before{
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    display: block;
-    width: 11px;
-    height: 11px;
-    background-color: #B7B3AE;
-    transition: 0.3s all linear;
-}
 
-:active::before{
-    width: 20px;
-}
+// Com.Input = styled.input`
+// position: absolute;
+// display: none;
+
+// &:checked + span{
+// background-color: #FFE1C2;
+// &::before{
+//     background-color: #F77F00;
+//     left: calc(100% - 2px);
+//     transform: translateX(-100%);
+// }
+// }
+
+// `
 
 
-`
+// Com.Slider = styled.span`
+// position: relative;
+// width: 30px;
+// height: 15px;
+// background-color: #CFCCC9;
+// margin: 0 25px 0 10px;
+// display: flex;
+// align-items: center;
+// border-radius: 10px;
+// cursor: pointer;
+// &::before{
+//     content: '';
+//     position: absolute;
+//     top: 2px;
+//     left: 2px;
+//     border-radius: 50%;
+//     display: block;
+//     width: 11px;
+//     height: 11px;
+//     background-color: #B7B3AE;
+//     transition: 0.3s all linear;
+// }
+
+// :active::before{
+//     width: 20px;
+// }
+
+
+// `
 
 
 

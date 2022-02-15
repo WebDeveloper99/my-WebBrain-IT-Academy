@@ -6,6 +6,7 @@ width: 90%;
 display: flex;
 flex-direction: column;
 margin: 20px auto;
-/* border: 1px solid black; */
+border: 1px solid black;
+
 
 ` 

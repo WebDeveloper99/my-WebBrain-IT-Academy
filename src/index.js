@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { GlobalContextProvider } from './context';
+import App from './App.jsx';
+import 'antd/dist/antd.css';
 import './index.css';
-import Root from './root';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <GlobalContextProvider>
-        <Root />
+        <App />
       </GlobalContextProvider>
     </BrowserRouter>
   </React.StrictMode>,

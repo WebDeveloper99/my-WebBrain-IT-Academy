@@ -41,8 +41,9 @@ export const Body = styled.div`
 display: flex;
 width: 70%;
 margin: 20px auto;
-background: rgba(0, 0, 0, 0,15);
+background: rgba(0, 0, 0, 0.2);
 box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
+
 
 
 `

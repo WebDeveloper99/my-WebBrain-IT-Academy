@@ -7,19 +7,18 @@ import Brand from '../Brand';
 import Button from '../Button';
 import { NavContainer, LogoTip, NavGroup, NavFooter, Link, Com } from './NavBarStyle';
 
-const Navbar = () => {
-
+const Navbar = (props) => {
 
   const location = useLocation()
 
   return <div>
 
-    <NavContainer>
+    <NavContainer color={props.color} >
 
       <LogoTip>
-        <Brand />
+        <Brand color={props.color} />
       </LogoTip>
-      <NavGroup>
+      <NavGroup color={props.color} >
         {
           navbarData.map(({ id, path, title, hidden }) => {
             return !hidden && (
@@ -33,11 +32,11 @@ const Navbar = () => {
         }
       </NavGroup>
       <NavFooter>
-        <Com>
+        {/* <Com>
           <Com.Label htmlFor="click">Qiziqarli sayohat</Com.Label>
           <Com.Input id='click' type='checkbox' />
           <Com.Slider />
-        </Com>
+        </Com> */}
         <Button btnName='Kirish' color={''} width={''} height={''} activ={''} />
       </NavFooter>
     </NavContainer>

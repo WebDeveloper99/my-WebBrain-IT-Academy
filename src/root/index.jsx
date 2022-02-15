@@ -6,19 +6,20 @@ import { Container } from './style';
 import Navbar from '../components/NavBar/Navbar';
 import Footer from '../components/Footer';
 import { navbarData } from '../utilits/PageOneData';
+import Settings from '../components/Settings';
 
-const Root = () => {
-
-    const location = useLocation();
+const Root = (props) => {
+    
     return <React.Fragment>
         <Container>
+            <Settings/>            
             <Routes>
-                <Route path={'/'}  element={<Navbar/>} >
-                <Route path={'/'}  element={<Footer/>} >
+                <Route path={'/'}  element={<Navbar color={props.color} />} >
+                <Route path={'/'}  element={<Footer color={props.color} />} >
                     {
                         navbarData.map(({id, path, Comp})=>{
                             return(
-                                  <Route key={id} path={path} element={<Comp/>} />
+                                  <Route key={id} path={path} element={<Comp color={props.color} />} />
                             )
                         })
                     }

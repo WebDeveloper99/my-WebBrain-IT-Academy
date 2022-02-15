@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 
+
 body{
   margin: 0 auto;
-  padding: 0;
+  /* padding: 0; */
   width: 1500px;
-  /* border: 2px solid aqua; */
+  height: auto;
+  border: 2px solid aqua;
   background-color: #fafafa;
 }
 

@@ -17,7 +17,7 @@ const Header = () => {
                 </span>
                 <TitleBtnGroup>
                     <Link to={'/kurslarimiz'}>
-                        <Button btnName={'Kurslarimiz'} width={'226px'} activ={'activ'} color={'#fff'}/>
+                        <Button btnName={'Kurslarimiz'} width={'226px'} color={''}/>
                     </Link>
                     <Link to={'/aloqa'}>
                         <Button btnName={'Aloqa'} width={'226px'} color={''} />
