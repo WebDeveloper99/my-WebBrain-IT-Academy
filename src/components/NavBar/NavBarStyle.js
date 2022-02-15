@@ -35,11 +35,6 @@ flex: 1;
 
 
 export const NavGroup = styled.div`
-<<<<<<< HEAD
-//////////
-=======
-//eldor
->>>>>>> chorni
 display: flex;
 align-items: center;
 justify-content: space-around;
